@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body {
+    @apply text-neutral-300 transition-all;
+  }
+
+  *::-webkit-scrollbar {
+    width: 12px;
+    transition: all 1s;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.774);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.664);
+    border-radius: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgb(105, 69, 2);
+    transition: color 2s ease-in;
+  }
+}
