@@ -1,16 +1,15 @@
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
 import { Highlight } from "../ui/heroHightlighComponent/Highlight";
-import { Main } from "../ui/Main";
 
 const Home = () => {
   return (
-    <Main>
+    <section className="h-full  flex flex-col items-center justify-center">
       <Spotlight
         className="-top-[1rem] left-4 md:left-60 md:-top-20"
         fill="green"
       />
 
-      <section
+      <article
         className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 flex items-center flex-col justify-center 
           "
       >
@@ -29,8 +28,8 @@ const Home = () => {
             ~ World's most versatile Musical Instrument ~
           </em>
         </div>
-      </section>
-    </Main>
+      </article>
+    </section>
   );
 };
 

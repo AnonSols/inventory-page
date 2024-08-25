@@ -4,20 +4,30 @@
 
 @layer components {
   body {
-    @apply text-neutral-300 transition-all;
+    @apply text-neutral-300 transition-all duration-300;
   }
 
+  li {
+    cursor: pointer;
+  }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+  .pin li {
+    @apply mb-9;
+  }
   *::-webkit-scrollbar {
     width: 12px;
     transition: all 1s;
   }
 
   *::-webkit-scrollbar-track {
-    background: rgba(128, 128, 128, 0.774);
+    background: rgba(94, 95, 93, 0.774);
   }
 
   *::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.664);
+    background: rgba(0, 0, 0, 0.9);
     border-radius: 6px;
   }
 
