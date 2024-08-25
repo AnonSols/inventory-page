@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./Button";
 import Back from "./Back";
 import { DeckButton } from "./DeckButton";
+// import { BeamCollitionAnimation } from "./Beam/BeamBackground";
 
 export function AppLayout() {
   const Location = useLocation();
@@ -59,6 +60,8 @@ export function AppLayout() {
         </Nav>
       )}
       <main className=" ">
+        {/* <BeamCollitionAnimation>
+        </BeamCollitionAnimation> */}
         <Outlet />
       </main>
     </div>
