@@ -10,7 +10,7 @@ const Home = () => {
       />
 
       <article
-        className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 flex items-center flex-col justify-center 
+        className=" p-4  relative z-10  w-full pt-20 md:pt-0 flex items-center flex-col justify-center 
           "
       >
         <h1 className="text-5xl md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-orange-200 to-green-500 ">

@@ -60,8 +60,8 @@ export function Button({
   }, [hovered]);
   return (
     <Tag
-      onMouseEnter={()=> {
-        // (event: React.MouseEvent<HTMLDivElement>) 
+      onMouseEnter={() => {
+        // (event: React.MouseEvent<HTMLDivElement>)
         setHovered(true);
       }}
       onMouseLeave={() => setHovered(false)}

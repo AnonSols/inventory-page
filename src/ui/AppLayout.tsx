@@ -20,13 +20,13 @@ export function AppLayout() {
   const navigate = useNavigate();
   return (
     // add exploading beams to the background
-    <div className="min-h-screen min-w-screen grid grid-rows-[auto_1fr_auto] w-full dark:bg-black dark:bg-dot-white/[0.3] bg-black/[0.96] antialiased bg-grid-white/[0.03] m-0">
+    <div className="min-h-screen grid grid-rows-[auto_1fr_auto] dark:bg-black dark:bg-dot-white/[0.3] bg-black/[0.96] antialiased bg-grid-white/[0.03] m-0">
       {/* use dynamic nav rendering */}
       {!isNavOpened ? (
         <Nav className="hover:shadow-green-600/20  shadow-green-600/5 ">
           {" "}
           <Link to="/">
-            <span className="text-xl font-bold text-white">
+            <span className="text-base sm:text-base font-bold md:text-md text-white">
               {/* <img
             className="h-12 w-auto"
             src="/logoblackpng.png"
@@ -37,7 +37,7 @@ export function AppLayout() {
             </span>
           </Link>
           <div className="flex items-center justify-around gap-4">
-            <ul className="flex text-sm items-center justify-center font-bold gap-4">
+            <ul className="flex text-sm sm:text-base font-bold md:text-md items-center justify-center gap-2 sm:gap-4">
               <li>Instagram</li>
               <li>Twitter</li>
             </ul>
@@ -59,10 +59,12 @@ export function AppLayout() {
           <DeckButton className="font-bold ">Request for Deck</DeckButton>
         </Nav>
       )}
-      <main className=" ">
+      <main className=" p-4 ">
         {/* <BeamCollitionAnimation>
         </BeamCollitionAnimation> */}
-        <Outlet />
+        <div className="max-w-xl mx-auto sm:max-w-xl md:max-w-3xl">
+          <Outlet />
+        </div>
       </main>
     </div>
   );
