@@ -59,10 +59,8 @@ export function AppLayout() {
           <DeckButton className="font-bold ">Request for Deck</DeckButton>
         </Nav>
       )}
-      <main className=" p-4 ">
-        {/* <BeamCollitionAnimation>
-        </BeamCollitionAnimation> */}
-        <div className="max-w-xl mx-auto sm:max-w-xl md:max-w-3xl">
+      <main className=" ">
+        <div className=" h-full max-w-xl mx-auto sm:max-w-xl md:max-w-3xl">
           <Outlet />
         </div>
       </main>

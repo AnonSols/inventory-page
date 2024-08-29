@@ -3,14 +3,14 @@ import { Highlight } from "../ui/heroHightlighComponent/Highlight";
 
 const Home = () => {
   return (
-    <section className="h-full  flex flex-col items-center justify-center">
+    <section className=" h-[inherit] flex flex-col items-center justify-center">
       <Spotlight
         className="-top-[1rem] left-4 md:left-60 md:-top-20"
         fill="green"
       />
 
       <article
-        className=" p-4  relative z-10  w-full pt-20 md:pt-0 flex items-center flex-col justify-center 
+        className=" p-4 my-auto relative z-10 w-full pt-20 md:pt-0 flex items-center flex-col justify-center 
           "
       >
         <h1 className="text-5xl md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-orange-200 to-green-500 ">
