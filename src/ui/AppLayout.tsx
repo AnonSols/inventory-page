@@ -20,7 +20,7 @@ export function AppLayout() {
   const navigate = useNavigate();
   return (
     // add exploading beams to the background
-    <div className="min-h-screen grid grid-rows-[auto_1fr_auto] dark:bg-black dark:bg-dot-white/[0.3] bg-black/[0.96] antialiased bg-grid-white/[0.03] m-0">
+    <div className="min-h-screen grid grid-rows-[auto_1fr_auto] dark:bg-black dark:bg-dot-white/[0.3] min-w-screen bg-black/[0.96] antialiased bg-grid-white/[0.03] m-0">
       {/* use dynamic nav rendering */}
       {!isNavOpened ? (
         <Nav className="hover:shadow-green-600/20  shadow-green-600/5 ">
@@ -56,7 +56,9 @@ export function AppLayout() {
         <Nav className="items-center justify-center">
           <Back />
 
-          <DeckButton className="font-bold ">Request for Deck</DeckButton>
+          <DeckButton className="font-bold text-[.8rem] sm:text-base p-1">
+            Request for Deck
+          </DeckButton>
         </Nav>
       )}
       <main className=" ">

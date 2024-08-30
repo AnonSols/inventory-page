@@ -13,7 +13,7 @@ const Packages = () => {
     };
   }, []);
   return (
-    <section className="h-full  flex flex-col md:items-center md:justify-center">
+    <section className="  md:items-center md:justify-center  h-[inherit] flex flex-col items-center justify-center">
       <Spotlight
         className="-top-[1rem] left-4 md:left-60 md:-top-20"
         fill="green"
@@ -23,7 +23,10 @@ const Packages = () => {
         className=" p-4 max-w-7xl mt:8 md:mt-0  relative z-10  w-full md:pt-0 items-center  justify-center
          grid gap-6 sm:gap-8 md:grid-rows-[1fr] md:grid-cols-[1fr_1fr]"
       >
-        <div className="border   border-gray-500 px-4 py-6 sm:px-6 sm:py-8 md:border-none rounded-lg ">
+        <div
+          className="border   border-gray-500 px-2
+         sm:px-4 py-4 sm:py-6  md:border-none rounded-lg "
+        >
           <h1 className="text-5xl md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-300  to-neutral-600  ">
             Journey With Us
           </h1>
@@ -55,7 +58,7 @@ const Packages = () => {
                 title="Gold Package - 500 Million"
                 href="https://genesisorb.com"
               >
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[18rem] h-[20rem] ">
+                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[15rem] sm:w-[18rem] sm:h-[20rem]  h-[18rem] ">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base  bg-gradient-to-b bg-clip-text bg-opacity-50 from-yellow-300  to-orange-600">
                     Gold Package - 500 Million
                   </h3>
@@ -78,7 +81,7 @@ const Packages = () => {
                 title="Classic Package - 250 Million"
                 href="https://genesisorb.com"
               >
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[22rem] h-[20rem] ">
+                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] sm:w-[22rem] h-[18rem] sm:h-[20rem] ">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base  bg-gradient-to-b bg-clip-text bg-opacity-50  from-neutral-300  to-neutral-600">
                     Classic Package - 250 Million
                   </h3>
@@ -101,7 +104,7 @@ const Packages = () => {
                 title="Premuium Package - 50 Million"
                 href="https://genesisorb.com"
               >
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[18rem] h-[20rem] ">
+                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[15rem] sm:w-[18rem] sm:h-[20rem]  h-[18rem] ">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base  bg-gradient-to-b bg-clip-text bg-opacity-50 from-cyan-300  to-green-600">
                     Premium Package - 50 Million
                   </h3>
