@@ -1,24 +1,24 @@
 import { PinContainer } from "./AnimatedPin";
 
 type PackageCardProp = {
-  width?: string;
-  height?: string;
   href?: string;
   cardTitle?: string;
-  cardTitleColor?: string;
   boxClass?: string;
-  childrenDescription: string;
+  childrenDescription?: string;
   className?: string;
   containerClassName?: string;
   cardTitleColorGradientTo?: string;
   cardTitleColorGradientFrom?: string;
   cardTitleClassName?: string;
   desciptionColor?: string;
+  titleColor?: string;
+  price?: string;
+  position?: string;
+  cardDimension?: string;
 };
 
 export function PackageCard({
-  width = "15rem",
-  height = "15rem",
+  cardDimension,
   containerClassName,
   cardTitle,
   cardTitleColorGradientTo,
@@ -26,7 +26,9 @@ export function PackageCard({
   cardTitleClassName,
   boxClass,
   className,
-  childrenDescription,
+  price,
+  titleColor,
+  position,
   href,
 }: PackageCardProp) {
   return (
@@ -37,7 +39,7 @@ export function PackageCard({
       href={href}
     >
       <div
-        className={`flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 ${width} ${height}`}
+        className={`flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 ${cardDimension}`}
       >
         <h3
           className={`max-w-xs !pb-2 !m-0 font-bold  text-base  bg-gradient-to-b bg-clip-text bg-opacity-50 ${cardTitleColorGradientFrom} ${cardTitleColorGradientTo} ${cardTitleClassName}`}
@@ -45,7 +47,15 @@ export function PackageCard({
           {cardTitle}
         </h3>
         <div className="text-base !m-0 !p-0 font-normal">
-          <span className="text-slate-500 ">{childrenDescription}</span>
+          <span className=" ">
+            Be a{" "}
+            <b
+              className={`bg-gradient-to-b bg-clip-text bg-opacity-50 ${titleColor} text-md`}
+            >
+              {position}
+            </b>{" "}
+            investor for {price} Million Naira
+          </span>
         </div>
         <div className={`flex flex-1 w-full rounded-lg mt-4 ${boxClass}`} />
       </div>

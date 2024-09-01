@@ -7,6 +7,8 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+import { HiX } from "react-icons/hi";
+import ModalForm from "./Form";
 
 type ModalContextType = {
   isOpenName: string;
@@ -46,14 +48,21 @@ function Window({
   children,
   windowsName,
 }: ModalProtocol & { windowsName: string }) {
-  const { isOpenName } = useModalContext();
+  const { isOpenName, close } = useModalContext();
 
   if (isOpenName !== windowsName) return;
 
   return createPortal(
     <>
       //overlay, modal
-      <div className="absolute inset-0 w-full min-h-screen background-blur-sm bg-gray-200">{children}</div>
+      <section className="z-[1000] fixed inset-0 w-full  h-full backdrop-blur-lg  transition-all duration-300 ">
+        <ModalForm>
+          <button onClick={() => close()}>
+            <HiX />
+          </button>
+          <div>{children}</div>
+        </ModalForm>
+      </section>
     </>,
     document.body
   );

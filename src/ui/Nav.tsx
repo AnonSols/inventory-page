@@ -7,7 +7,7 @@ interface NavType {
 function Nav({ className, children }: NavType) {
   return (
     <nav
-      className={`p-6 text-base sm:px-14 md:px-20 sticky lg:px-26 flex shadow-lg items-center bg-transparent  justify-between backdrop-blur-xs transition-all duration-[.3s] ${className}
+      className={`p-6 text-base sm:px-14 md:px-20 sticky lg:px-26 flex shadow-lg items-center justify-between transition-all duration-[.3s] ${className}
       `}
     >
       {children}

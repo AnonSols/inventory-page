@@ -10,15 +10,22 @@
   li {
     cursor: pointer;
   }
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-  .pin li {
-    @apply mb-9;
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3.2rem 4rem;
+    transition: all 0.5s;
+
+    @apply fixed rounded-lg shadow-lg bg-slate-100;
+  }
+
   *::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
     transition: all 1s;
   }
 

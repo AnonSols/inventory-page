@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section className=" h-[inherit] flex flex-col items-center justify-center">
       <Spotlight
-        className="-top-[1rem] left-4 md:left-60 md:-top-20"
+        className="-top-[1.4rem] left-4 md:left-60 md:-top-20"
         fill="green"
       />
 

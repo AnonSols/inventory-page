@@ -44,12 +44,12 @@ const Packages = () => {
           </div>
         </div>
 
-        <section className=" flex items-center justify-center flex-col gap-10  rounded-lg">
+        <section className="pt-4 flex items-center justify-center flex-col   rounded-lg">
           <h1 className="text-3xl md:hidden font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-300  to-neutral-600  ">
             Our Packages
           </h1>
 
-          <ul className="pin w-full backdrop-blur-sm md:flex-row grid grid-rows-1 md:grid-cols-[auto_auto_auto] justify-center gap-4">
+          <ul className="backdrop-blur-sm md:flex-row grid grid-rows-1 md:grid-cols-[auto_auto_auto] justify-center gap-4">
             <li>
               {" "}
               <PinContainer
