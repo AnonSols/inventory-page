@@ -44,8 +44,8 @@ const Packages = () => {
          grid gap-6 sm:gap-8 md:grid-rows-[1fr] lg:grid-cols-[1fr_1fr] md:gap-0"
           >
             <div
-              className="border mt-4 md:block flex flex-col border-gray-500 px-4
-         sm:px-4 py-4 sm:py-6 self-center md:border-none rounded-lg "
+              className="border mt-4 md:block flex flex-col border-gray-500 px-123
+         sm:px-14 py-4 sm:py-6 self-center md:border-none rounded-lg "
             >
               <h1 className="text-5xl md:self-start md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-300  to-neutral-600  ">
                 Journey With Us
