@@ -66,7 +66,7 @@ function Home() {
           className="  my-auto relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
           "
         >
-          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-orange-200 to-green-500 text-3xl lg:text-7xl md:text-6xl px-4 sm:text-3xl">
+          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-orange-200 to-green-500 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-3xl">
             Welcome to the Future
           </h1>
           <div className="flex items-center justify-center flex-col leading-3 px-5">
