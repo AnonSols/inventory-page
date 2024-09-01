@@ -54,7 +54,7 @@ const Packages = () => {
                 <p className="mt-4 font-normal  text-neutral-300 max-w-lg text-center mx-auto tracking-wide md:text-lg md:tracking-wider leading-8 text-sm">
                   The global Market for musical instruments is Project to reach{" "}
                   <br />
-                  <Highlight className="text-black p-1 sm:p-2 md:mt-2 dark:text-white">
+                  <Highlight className="text-black p-1 sm:p-2 sm:mt-3 md:mt-4 md:p-1 dark:text-white">
                     <b>$10.82 billion by 2025</b>
                   </Highlight>
                 </p>
