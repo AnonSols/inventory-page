@@ -111,10 +111,10 @@ const Packages = () => {
                 <ul className=" md:hidden backdrop-blur-sm flex flex-col gap-4 justify-center items-center">
                   <li>
                     <Card
-                      title="Gold  Package - 50 Million"
+                      title="Gold  Package - 500 Million"
                       position="Gold"
                       color="from-yellow-500 via-orange-200 to-orange-500"
-                      price="50"
+                      price="500"
                       cardDimensions="w-[16rem] h-[19rem]  sm:w-[18rem] sm:h-[20rem]  "
                       titleColor="from-yellow-300  to-orange-600"
                     />
@@ -132,10 +132,10 @@ const Packages = () => {
                   <li>
                     <Card
                       cardDimensions="sm:w-[18rem] sm:h-[20rem]  w-[16rem] h-[19rem] "
-                      title="Premium  Package - 500 Million"
+                      title="Premium  Package - 50 Million"
                       position="Premium"
                       color="from-green-500 via-cyan-200 to-green-500"
-                      price="500"
+                      price="50"
                       titleColor="from-cyan-300  to-green-600"
                     />
                   </li>

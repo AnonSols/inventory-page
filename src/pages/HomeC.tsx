@@ -13,7 +13,7 @@ function Home() {
       <header>
         <Banner className="flex justify-around space-x-4 items-start">
           <div
-            className="font-bold flex-col md:space-x-2 items-center justify-center md:flex-row grow flex text-black  text-start mx-auto md:text-md 
+            className="font-bold flex-col md:space-x-2 items-center justify-center md:items-baseline md:flex-row grow flex text-black  text-start mx-auto md:text-md 
            leading-4
            text-sm"
           >
@@ -66,7 +66,7 @@ function Home() {
           className="  my-auto relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
           "
         >
-          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-orange-200 to-green-500 text-4xl lg:text-7xl md:text-6xl">
+          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-orange-200 to-green-500 text-3xl lg:text-7xl md:text-6xl px-4 sm:text-3xl">
             Welcome to the Future
           </h1>
           <div className="flex items-center justify-center flex-col leading-3 px-5">
