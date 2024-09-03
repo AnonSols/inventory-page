@@ -29,7 +29,41 @@ const Packages = () => {
               </DeckButton>
             </Modal.Open>
             <Modal.Window windowsName="deck">
-              <p>Form Deck</p>
+              <p
+                className=" text-xl tracking-widest
+              mb"
+              >
+                We will Deliver Our Deck Right To Your Mail Box!
+              </p>
+
+              <ul className="mt-5 deck-ul flex flex-col">
+                <li className="">
+                  <label htmlFor="name" className="">
+                    {" "}
+                    full name:
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className=""
+                    placeholder="What's your name!"
+                  />
+                </li>
+
+                <li>
+                  <label className=" "> email:</label>
+                  <input
+                    type="email"
+                    className=""
+                    placeholder="What's your email!"
+                  />
+                </li>
+
+                <button className="w-full bg-green-800 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-1 flex items-center justify-center tracking-wide text-slate-200 mt-4">
+                  {" "}
+                  Request🎊!{" "}
+                </button>
+              </ul>
             </Modal.Window>
           </Nav>
         </header>
@@ -54,7 +88,7 @@ const Packages = () => {
                 <p className="mt-4 font-normal  text-neutral-300 max-w-lg text-center mx-auto tracking-wide md:text-lg md:tracking-wider leading-8 text-sm">
                   The global Market for musical instruments is Project to reach{" "}
                   <br />
-                  <Highlight className="text-black p-1 sm:p-2 sm:mt-3 md:mt-4 md:p-1 dark:text-white">
+                  <Highlight className="text-black p-1 sm:p-2 sm:mt-3 md:mt-4 md:p-1 dark:text-white lg:mt-5">
                     <b>$10.82 billion by 2025</b>
                   </Highlight>
                 </p>

@@ -7,6 +7,14 @@
     @apply text-neutral-300 transition-all duration-300;
   }
 
+  input {
+    @apply outline-none rounded-lg  shadow-md text-lg px-4  py-3 mb-3;
+  }
+
+  label {
+    @apply uppercase tracking-wide font-bold text-xs;
+  }
+
   li {
     cursor: pointer;
   }
@@ -16,12 +24,13 @@
   }
   .modal {
     top: 50%;
+
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 3.2rem 4rem;
+    padding: 2rem;
     transition: all 0.5s;
 
-    @apply fixed rounded-lg shadow-lg bg-slate-100;
+    @apply fixed rounded-lg shadow-lg bg-slate-100/50 text-black backdrop-blur-sm;
   }
 
   *::-webkit-scrollbar {

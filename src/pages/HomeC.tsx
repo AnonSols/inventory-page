@@ -11,7 +11,7 @@ function Home() {
   return (
     <Background className="grid overscroll-hidden grid-rows-[auto_1fr] ">
       <header>
-        <Banner className="flex justify-around space-x-4 items-center">
+        <Banner className="flex justify-around items-center">
           <div
             className="font-bold flex-col md:space-x-2 items-center justify-center md:items-center md:flex-row grow flex text-black   mx-auto md:text-md 
            leading-4

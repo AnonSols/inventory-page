@@ -57,8 +57,13 @@ function Window({
       //overlay, modal
       <section className="z-[1000] fixed inset-0 w-full  h-full backdrop-blur-lg  transition-all duration-300 ">
         <ModalForm>
-          <button onClick={() => close()}>
-            <HiX />
+          <button
+            className="flex  w-full justify-end mb-2"
+            onClick={() => close()}
+          >
+            <span className="p-3 bg-slate-700/50 rounded-lg focus:ring focus:ring-green-700 outline-none transition-all duration-300 hover:bg-slate-800 hover:text-slate-200">
+              <HiX />
+            </span>
           </button>
           <div>{children}</div>
         </ModalForm>
