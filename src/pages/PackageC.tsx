@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Background from "../ui/Background";
 import Nav from "../ui/Nav";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
@@ -8,9 +8,9 @@ import Modal from "../ui/Modal";
 import { Highlight } from "../ui/heroHightlighComponent/Highlight";
 import Card from "../ui/Card";
 import { PackageCard } from "../ui/PackageCard";
-import {toast} from 'react-hot-toast'
+import { toast } from "react-hot-toast";
 
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 const Packages = () => {
   const [fName, setFname] = useState("");
   const [mail, setMail] = useState("");
@@ -23,24 +23,22 @@ const Packages = () => {
     };
   }, []);
 
-  function  clearFn() {
-   setMail("");
+  function clearFn() {
+    setMail("");
     setFname("");
   }
   function handleRequest() {
-
-
     if (!mail && !fName) return;
 
     const data = { fName, mail };
 
     localStorage.setItem(fName, JSON.stringify(data));
 
-    clearFn()
+    clearFn();
 
-    toast.success("We'll keep you up-to-date🥳🥳!")
-  
-    navigate('/');
+    toast.success("We'll keep you up-to-date🥳🥳!");
+
+    navigate("/");
   }
   return (
     <Modal>
@@ -54,7 +52,12 @@ const Packages = () => {
                 Request for Deck
               </DeckButton>
             </Modal.Open>
-            <Modal.Window windowsName="deck" onSubmit={handleRequest} btnState={(!fName && !mail) || (!fName || !mail)} reset={clearFn}>
+            <Modal.Window
+              windowsName="deck"
+              onSubmit={handleRequest}
+              btnState={(!fName && !mail) || !fName || !mail}
+              reset={clearFn}
+            >
               <p
                 className=" text-xl tracking-widest
               mb"
@@ -90,8 +93,6 @@ const Packages = () => {
                     placeholder="What's your email!"
                   />
                 </li>
-
-            
               </ul>
             </Modal.Window>
           </Nav>
