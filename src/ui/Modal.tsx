@@ -1,6 +1,7 @@
-import React,{
+import React, {
   cloneElement,
   createContext,
+  FormEvent,
   ReactElement,
   ReactNode,
   useContext,
@@ -49,55 +50,53 @@ function Window({
   windowsName,
   btnState,
   onSubmit,
-  reset
-}: ModalProtocol & { windowsName: string,
-  btnState:boolean|undefined,
- onSubmit:(e:React.FormEvent)=>void;
-reset:()=>void;
+  reset,
+}: ModalProtocol & {
+  windowsName: string;
+  btnState: boolean | undefined;
+  onSubmit: () => void;
+  reset: () => void;
 }) {
   const { isOpenName, close } = useModalContext();
 
   if (isOpenName !== windowsName) return;
 
-function handleSubmit(e:React.FormElement){
-      e.preventDefault();
-onSubmit();
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    onSubmit();
 
-close();
-}
+    close();
+  }
 
-function cancleBtn() {
-
-
-  close()
-  reset()
-}
+  function cancleBtn() {
+    close();
+    reset();
+  }
   return createPortal(
     <>
       //overlay, modal
       <section className="z-[1000] fixed inset-0 w-full  h-full backdrop-blur-lg  transition-all duration-300 ">
         <ModalForm>
-          <div
-            className="flex w-full  justify-end mb-2"
-            
-          >
+          <div className="flex w-full  justify-end mb-2">
             <button
-            onClick={() => cancleBtn()} className="p-3 bg-slate-700/50 rounded-lg focus:ring focus:ring-green-700 outline-none transition-all duration-300 hover:bg-slate-800 hover:text-slate-200">
+              onClick={() => cancleBtn()}
+              className="p-3 bg-slate-700/50 rounded-lg focus:ring focus:ring-green-700 outline-none transition-all duration-300 hover:bg-slate-800 hover:text-slate-200"
+            >
               <HiX />
             </button>
           </div>
-          <div>{children}
-            <div  className=" flex justify-end">
-              
-                 <button
-                 onClick={e=>handleSubmit(e)}
-                  disabled={btnState && btnState}
-                  className="w-full bg-green-800 disabled:bg-green-800/80 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-2 focus:offset-2 flex items-center justify-center tracking-wide text-slate-200 mt-4 hover:bg-green-900 hover:shadow-xl md:w-[40%] md:self-end  disabled:cursor-not-allowed "
-                >
-                  {" "}
-                  Request🎊!{" "}
-                </button>
-               </div>
+          <div>
+            {children}
+            <div className=" flex justify-end">
+              <button
+                onClick={(e) => handleSubmit(e)}
+                disabled={btnState && btnState}
+                className="w-full bg-green-800 disabled:bg-green-800/80 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-2 focus:offset-2 flex items-center justify-center tracking-wide text-slate-200 mt-4 hover:bg-green-900 hover:shadow-xl md:w-[40%] md:self-end  disabled:cursor-not-allowed "
+              >
+                {" "}
+                Request🎊!{" "}
+              </button>
+            </div>
           </div>
         </ModalForm>
       </section>
