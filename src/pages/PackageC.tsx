@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "../ui/Background";
 import Nav from "../ui/Nav";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
@@ -8,7 +8,13 @@ import Modal from "../ui/Modal";
 import { Highlight } from "../ui/heroHightlighComponent/Highlight";
 import Card from "../ui/Card";
 import { PackageCard } from "../ui/PackageCard";
+import {toast} from 'react-hot-toast'
+
+import {useNavigate} from 'react-router-dom'
 const Packages = () => {
+  const [fName, setFname] = useState("");
+  const [mail, setMail] = useState("");
+  const navigate = useNavigate();
   useEffect(() => {
     document.title = "Genesis | Packages";
 
@@ -16,11 +22,31 @@ const Packages = () => {
       document.title = "Genesis | Home";
     };
   }, []);
+
+  function  clearFn() {
+   setMail("");
+    setFname("");
+  }
+  function handleRequest() {
+
+
+    if (!mail && !fName) return;
+
+    const data = { fName, mail };
+
+    localStorage.setItem(fName, JSON.stringify(data));
+
+    clearFn()
+
+    toast.success("We'll keep you up-to-date🥳🥳!")
+  
+    navigate('/');
+  }
   return (
     <Modal>
       <Background className="grid overscroll-x-none grid-rows-[auto_1fr] ">
         <header>
-          <Nav className="hover:shadow-green-600/20  shadow-green-600/5 ">
+          <Nav className="hover:shadow-green-600/20  shadow-green-600/10 ">
             {" "}
             <Back />
             <Modal.Open open="deck">
@@ -28,7 +54,7 @@ const Packages = () => {
                 Request for Deck
               </DeckButton>
             </Modal.Open>
-            <Modal.Window windowsName="deck">
+            <Modal.Window windowsName="deck" onSubmit={handleRequest} btnState={(!fName && !mail) || (!fName || !mail)} reset={clearFn}>
               <p
                 className=" text-xl tracking-widest
               mb"
@@ -37,7 +63,7 @@ const Packages = () => {
               </p>
 
               <ul className="mt-5 deck-ul flex flex-col">
-                <li className="">
+                <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
                   <label htmlFor="name" className="">
                     {" "}
                     full name:
@@ -45,24 +71,27 @@ const Packages = () => {
                   <input
                     type="text"
                     id="name"
-                    className=""
+                    value={fName}
+                    onChange={(e) => setFname(e.target.value)}
                     placeholder="What's your name!"
                   />
                 </li>
 
-                <li>
-                  <label className=" "> email:</label>
+                <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                  <label htmlFor="email" className=" ">
+                    {" "}
+                    email:
+                  </label>
                   <input
                     type="email"
-                    className=""
+                    value={mail}
+                    onChange={(e) => setMail(e.target.value)}
+                    id="email"
                     placeholder="What's your email!"
                   />
                 </li>
 
-                <button className="w-full bg-green-800 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-1 flex items-center justify-center tracking-wide text-slate-200 mt-4">
-                  {" "}
-                  Request🎊!{" "}
-                </button>
+            
               </ul>
             </Modal.Window>
           </Nav>

@@ -8,11 +8,11 @@
   }
 
   input {
-    @apply outline-none rounded-lg  shadow-md text-lg px-4  py-3 mb-3;
+    @apply outline-none rounded-lg w-full shadow-md text-lg px-4 md:basis-[80%] grow py-3 mb-3;
   }
 
   label {
-    @apply uppercase tracking-wide font-bold text-xs;
+    @apply uppercase tracking-wide font-bold text-xs sm:text-sm md:text-base     md:basis-[20%] grow;
   }
 
   li {

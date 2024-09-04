@@ -15,7 +15,7 @@ function Home() {
           <div
             className="font-bold flex-col md:space-x-2 items-center justify-center md:items-center md:flex-row grow flex text-black   mx-auto md:text-md 
            leading-4
-           text-xs"
+           text-xs md:text-sm lg:text-md"
           >
             <p>
               Invest, let's build the future together. We are building an
