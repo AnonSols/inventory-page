@@ -114,7 +114,7 @@ const Packages = () => {
               className="border mt-4 md:block flex flex-col border-gray-500 px-123
          sm:px-14 py-4 sm:py-6 self-center md:border-none rounded-lg "
             >
-              <h1 className="text-5xl md:self-start md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-400  to-neutral-700  ">
+              <h1 className="text-5xl md:self-start md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-600  to-neutral-900  ">
                 Journey With Us
               </h1>
               <div className="flex items-center justify-center flex-col leading-3 px-5">
@@ -132,7 +132,7 @@ const Packages = () => {
             </div>
 
             <section className="pt-4 gap-8 md:gap-0 flex items-center justify-center flex-col   rounded-lg">
-              <h1 className="text-3xl lg:hidden font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-400  to-neutral-700 pb-2 ">
+              <h1 className="text-3xl lg:hidden font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-600  to-neutral-900 pb-2 ">
                 Our Packages
               </h1>
 
