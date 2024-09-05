@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply text-neutral-300 transition-all duration-300;
+    @apply text-slate-900 transition-all duration-300;
   }
 
   input {
@@ -30,7 +30,7 @@
     padding: 2rem;
     transition: all 0.5s;
 
-    @apply fixed rounded-lg shadow-lg bg-slate-100/50 text-black backdrop-blur-sm;
+    @apply fixed rounded-lg shadow-xl w-[70%] sm:w-[60%] md:w-[65%] lg:w-[50%] bg-slate-300  text-black;
   }
 
   *::-webkit-scrollbar {

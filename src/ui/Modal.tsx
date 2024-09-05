@@ -80,7 +80,7 @@ function Window({
           <div className="flex w-full  justify-end mb-2">
             <button
               onClick={() => cancleBtn()}
-              className="p-3 bg-slate-700/50 rounded-lg focus:ring focus:ring-green-700 outline-none transition-all duration-300 hover:bg-slate-800 hover:text-slate-200"
+              className="p-3 bg-slate-700/50 rounded-lg focus:ring focus:ring-green-700 outline-none transition-all duration-300 hover:bg-slate-800 hover:text-slate-200 shadow-lg"
             >
               <HiX />
             </button>

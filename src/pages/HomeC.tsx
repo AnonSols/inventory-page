@@ -5,7 +5,6 @@ import Banner from "../ui/Banner";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
 // import { HiX } from "react-icons/hi";
 import { Button } from "../ui/Button";
-
 function Home() {
   const navigate = useNavigate();
   return (
@@ -35,10 +34,10 @@ function Home() {
             <HiX />
           </button> */}
         </Banner>
-        <Nav className="hover:shadow-green-600/20  backdrop-blur-xs shadow-green-600/5  bg-transparent ">
+        <Nav className="hover:shadow-green-600/20  backdrop-blur-lg shadow-green-600/10  bg-transparent ">
           {" "}
           <Link to="/">
-            <span className="text-base sm:text-base font-bold md:text-md text-white">
+            <span className="text-base sm:text-base font-bold md:text-md ">
               {/* <img
             className="h-12 w-auto"
             src="/logoblackpng.png"
@@ -70,7 +69,7 @@ function Home() {
             Welcome to the Future
           </h1>
           <div className="flex items-center justify-center flex-col leading-3 px-5">
-            <em className="text-xs lg:text-sm md:text-md text-gray-400 mt-4">
+            <em className="text-xs lg:text-sm md:text-md text-gray-800 mt-4">
               ~ World's most versatile Musical Instrument ~
             </em>
           </div>
