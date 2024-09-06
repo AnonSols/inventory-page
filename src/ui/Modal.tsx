@@ -10,7 +10,6 @@ import React, {
 import { createPortal } from "react-dom";
 import { HiX } from "react-icons/hi";
 import ModalForm from "./Form";
-
 type ModalContextType = {
   isOpenName: string;
   close: () => void;
@@ -62,9 +61,8 @@ function Window({
   if (isOpenName !== windowsName) return;
 
   function handleSubmit(e: FormEvent) {
-    e.preventDefault();
+    e && e.preventDefault();
     onSubmit();
-
     close();
   }
 
@@ -76,7 +74,7 @@ function Window({
     <>
       //overlay, modal
       <section className="z-[1000] fixed inset-0 w-full  h-full backdrop-blur-lg  transition-all duration-300 ">
-        <ModalForm>
+        <ModalForm onSubmit={handleSubmit}>
           <div className="flex w-full  justify-end mb-2">
             <button
               onClick={() => cancleBtn()}
@@ -89,7 +87,6 @@ function Window({
             {children}
             <div className=" flex justify-end">
               <button
-                onSubmit={(e) => handleSubmit(e)}
                 disabled={btnState && btnState}
                 className="w-full bg-green-800 disabled:bg-green-800/80 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-2 focus:offset-2 flex items-center justify-center tracking-wide text-slate-200 mt-4 hover:bg-green-900 hover:shadow-xl md:w-[40%] md:self-end  disabled:cursor-not-allowed "
               >

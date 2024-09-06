@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/HomeC";
+import Success from "./pages/Success";
 import PageNotFound from "./pages/PageNotFound";
 import Packages from "./pages/PackageC";
 // import { AppLayout } from "./ui/AppLayout";
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="package" element={<Packages />} />
+          <Route path="success" element={<Success />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
@@ -29,10 +31,10 @@ const App = () => {
           },
           style: {
             fontSize: "16px",
-            maxWidth: "500px",
+            maxWidth: "400px",
             padding: "16px 24px",
-            backgroundColor: "gray",
-            color: "white",
+            backgroundColor: "#cbd5e1",
+            color: "black",
           },
         }}
       />

@@ -41,7 +41,7 @@ const Packages = () => {
 
     toast.success("We'll keep you up-to-date🥳🥳!");
 
-    navigate("/");
+    navigate("/success");
   }
   return (
     <Modal>
