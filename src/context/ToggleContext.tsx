@@ -4,7 +4,7 @@ interface ToggleProtocol {
   isDarkMode: boolean;
   setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const ToggleContext = createContext<undefined | NavProtocol>(undefined);
+const ToggleContext = createContext<undefined | ToggleProtocol>(undefined);
 
 function ToggleProvider({ children }: { children: ReactNode }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
