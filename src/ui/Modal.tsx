@@ -89,7 +89,7 @@ function Window({
             {children}
             <div className=" flex justify-end">
               <button
-                onClick={(e) => handleSubmit(e)}
+                onSubmit={(e) => handleSubmit(e)}
                 disabled={btnState && btnState}
                 className="w-full bg-green-800 disabled:bg-green-800/80 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-2 focus:offset-2 flex items-center justify-center tracking-wide text-slate-200 mt-4 hover:bg-green-900 hover:shadow-xl md:w-[40%] md:self-end  disabled:cursor-not-allowed "
               >

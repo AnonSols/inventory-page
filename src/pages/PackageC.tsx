@@ -114,14 +114,14 @@ const Packages = () => {
               className="border mt-4 md:block flex flex-col border-gray-500 px-123
          sm:px-14 py-4 sm:py-6 self-center md:border-none rounded-lg "
             >
-              <h1 className="text-5xl md:self-start md:text-7xl font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-600  to-neutral-900  ">
+              <h1 className="text-4xl p-1 md:p-6 md:self-start md:text-7xl  font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800  ">
                 Journey With Us
               </h1>
               <div className="flex items-center justify-center flex-col leading-3 px-5">
                 <p className="mt-4 font-normal   max-w-lg text-center mx-auto tracking-wide md:text-lg md:tracking-wider leading-8 text-sm">
                   The global Market for musical instruments is Project to reach{" "}
                   <br />
-                  <Highlight className="text-black p-1 sm:p-2 sm:mt-3 md:mt-4 md:p-1 dark:text-white lg:mt-5">
+                  <Highlight className="text-black p-1 sm:p-2 sm:mt-3 md:mt-6 md:p-1 dark:text-white lg:mt-5">
                     <b>$10.82 billion by 2025</b>
                   </Highlight>
                 </p>
@@ -132,7 +132,7 @@ const Packages = () => {
             </div>
 
             <section className="pt-4 gap-8 md:gap-0 flex items-center justify-center flex-col   rounded-lg">
-              <h1 className="text-3xl lg:hidden font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-neutral-600  to-neutral-900 pb-2 ">
+              <h1 className="text-3xl lg:hidden font-bold text-center bg-clip-text bg-opacity-50 text-transparent dark:bg-gradient-to-b dark:from-neutral-600  dark:to-neutral-900 bg-gradient-to-b from-green-600 to-green-800 pb-2 ">
                 Our Packages
               </h1>
 
