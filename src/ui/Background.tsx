@@ -8,7 +8,7 @@ type BackgroundType = {
 const Background = ({ children, className }: BackgroundType) => {
   return (
     <div
-      className={`min-h-dvh w-full dark:bg-dot-white/[0.3]  md:pb-0 pb-5 antialiased bg-grid-slate-900/[0.06] bg-white m-0 ${className}`}
+      className={`min-h-dvh w-full dark:bg-dot-white/[0.3]  md:pb-0  antialiased md:bg-grid-slate-900/[0.06] bg-white m-0 ${className}`}
     >
       {children}
     </div>

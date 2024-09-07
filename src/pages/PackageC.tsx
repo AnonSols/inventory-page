@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Nav from "../ui/Nav";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
 import Back from "../ui/Back";
-import { DeckButton } from "../ui/DeckButton";
+// import { DeckButton } from "../ui/DeckButton";
 import Modal from "../ui/Modal";
 import {
   HeroHighlight,
@@ -13,7 +13,11 @@ import Card from "../ui/Card";
 import { PackageCard } from "../ui/PackageCard";
 import { toast } from "react-hot-toast";
 
-import { useNavigate } from "react-router-dom";
+import {
+  // Link,
+  useNavigate,
+} from "react-router-dom";
+import { Button } from "../ui/Button";
 const Packages = () => {
   const [fName, setFname] = useState("");
   const [mail, setMail] = useState("");
@@ -51,9 +55,9 @@ const Packages = () => {
             {" "}
             <Back />
             <Modal.Open open="deck">
-              <DeckButton className=" lg:font-bold text-[.8rem] shadow-lg text-[inherit] sm:text-base px-3">
+              <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
                 Request for Deck
-              </DeckButton>
+              </Button>
             </Modal.Open>
             <Modal.Window
               windowsName="deck"

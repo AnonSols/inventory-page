@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Background from "../ui/Background";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
-import { Link } from "react-router-dom";
-import Nav from "../ui/Nav";
+// import { Link } from "react-router-dom";
+// import Nav from "../ui/Nav";
 import Confetti from "react-confetti";
 import { useToggleContext } from "../context/ToggleContext";
+import TempNav from "../ui/PackageNav";
 
 const Success = () => {
   const [windowSize, setWindowSize] = useState<{
@@ -39,7 +40,7 @@ const Success = () => {
         <Confetti width={windowSize.width} height={windowSize.height} />
       )}
 
-      <Nav className="hover:shadow-green-600/20  backdrop-blur-lg shadow-green-600/10  bg-transparent ">
+      {/* <Nav className="hover:shadow-green-600/20  backdrop-blur-lg shadow-green-600/10  bg-transparent ">
         {" "}
         <Link to="/">
           <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
@@ -52,8 +53,8 @@ const Success = () => {
             <li>Twitter</li>
           </ul>
         </div>
-      </Nav>
-
+      </Nav> */}
+      <TempNav />
       <article
         className="  my-auto relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
           "

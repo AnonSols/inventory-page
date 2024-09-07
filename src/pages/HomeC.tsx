@@ -1,10 +1,14 @@
-import { Link, useNavigate } from "react-router-dom";
+import {
+  //  Link,
+  useNavigate,
+} from "react-router-dom";
 import Background from "../ui/Background";
-import Nav from "../ui/Nav";
+// import Nav from "../ui/Nav";
 import Banner from "../ui/Banner";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
 // import { HiX } from "react-icons/hi";
 import { Button } from "../ui/Button";
+import TempNav from "../ui/PackageNav";
 function Home() {
   const navigate = useNavigate();
   return (
@@ -34,7 +38,7 @@ function Home() {
             <HiX />
           </button> */}
         </Banner>
-        <Nav className="hover:shadow-green-600/20  backdrop-blur-lg shadow-green-600/10  bg-transparent ">
+        {/* <Nav className="hover:shadow-green-600/20  backdrop-blur-lg shadow-green-600/10  bg-transparent ">
           {" "}
           <Link to="/">
             <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
@@ -51,23 +55,34 @@ function Home() {
               <li>Twitter</li>
             </ul>
           </div>
-        </Nav>
+        </Nav> */}
+
+        <TempNav />
       </header>
 
       <main>
-        <Spotlight
-          className="-top-[.9rem] left-4 lg:left-60 lg:-top-24 md:left-20 md:-top-20"
-          fill="green"
-        />
         <article
           className="  my-auto relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
           "
         >
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute z-[-2] top-0 left-0 w-full h-full object-cover"
+          >
+            <source src="/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <Spotlight
+            className="-top-[.9rem] left-4 lg:left-60 lg:-top-24 md:left-20 md:-top-20"
+            fill="green"
+          />
           <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
             Welcome to the Future
           </h1>
-          <div className="flex items-center justify-center flex-col leading-3 px-5">
-            <em className="text-xs lg:text-sm md:text-md text-gray-800 mt-4">
+          <div className="flex items-center justify-center flex-col text-white leading-3 px-5">
+            <em className="text-xs lg:text-sm md:text-md  mt-4">
               ~ World's most versatile Musical Instrument ~
             </em>
           </div>
