@@ -34,7 +34,7 @@ const Success = () => {
     };
   }, []);
   return (
-    <Background className="grid overscroll-hidden grid-rows-[auto_1fr]  items-center justify-center w-full h-full">
+    <Background className="grid overflow-hidden grid-rows-[auto_1fr]  items-center justify-center w-full h-full">
       {ConfettiToggle && (
         <Confetti width={windowSize.width} height={windowSize.height} />
       )}
