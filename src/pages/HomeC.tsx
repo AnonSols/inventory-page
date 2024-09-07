@@ -81,7 +81,7 @@ function Home() {
           <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
             Welcome to the Future
           </h1>
-          <div className="flex items-center justify-center flex-col text-white leading-3 px-5">
+          <div className="flex items-center justify-center flex-col leading-3 px-5">
             <em className="text-xs lg:text-sm md:text-md  mt-4">
               ~ World's most versatile Musical Instrument ~
             </em>
