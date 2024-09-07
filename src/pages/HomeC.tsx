@@ -39,12 +39,10 @@ function Home() {
           <Link to="/">
             <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
               <img
-            className="h-12 w-auto"
-            src="/public/logo.png"
-            alt="genesis orb's logo"
-            
-          />
-              
+                className="h-12 w-auto"
+                src="/logo.png"
+                alt="genesis orb's logo"
+              />
             </span>
           </Link>
           <div className="flex items-center justify-around dark:text-neutral-200 gap-4">
@@ -52,7 +50,6 @@ function Home() {
               <li>Instagram</li>
               <li>Twitter</li>
             </ul>
-           
           </div>
         </Nav>
       </header>

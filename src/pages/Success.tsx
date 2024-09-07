@@ -45,7 +45,7 @@ const Success = () => {
             <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
               <img
                 className="h-12 w-auto"
-                src="/public/logo.png"
+                src="/logo.png"
                 alt="genesis orb's logo"
               />
             </span>
