@@ -41,7 +41,7 @@ function Home() {
               <img
                 className="h-12 w-auto"
                 src="/logo.png"
-                alt="genesis orb's logo"
+                alt="GenesisOrb"
               />
             </span>
           </Link>
