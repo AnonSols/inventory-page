@@ -3,13 +3,18 @@ import { createContext, ReactNode, useContext, useState } from "react";
 interface ToggleProtocol {
   isDarkMode: boolean;
   setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  ConfettiToggle: boolean;
+  setConfettiToggle: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const ToggleContext = createContext<undefined | ToggleProtocol>(undefined);
 
 function ToggleProvider({ children }: { children: ReactNode }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [ConfettiToggle, setConfettiToggle] = useState(false);
   return (
-    <ToggleContext.Provider value={{ isDarkMode, setIsDarkMode }}>
+    <ToggleContext.Provider
+      value={{ isDarkMode, setIsDarkMode, ConfettiToggle, setConfettiToggle }}
+    >
       {children}
     </ToggleContext.Provider>
   );

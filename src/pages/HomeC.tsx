@@ -38,13 +38,13 @@ function Home() {
           {" "}
           <Link to="/">
             <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
-              {/* <img
+              <img
             className="h-12 w-auto"
-            src="/logoblackpng.png"
+            src="/public/logo.png"
             alt="genesis orb's logo"
             
-          /> */}
-              Logo
+          />
+              
             </span>
           </Link>
           <div className="flex items-center justify-around dark:text-neutral-200 gap-4">

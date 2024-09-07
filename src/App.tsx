@@ -6,9 +6,10 @@ import Packages from "./pages/PackageC";
 // import { AppLayout } from "./ui/AppLayout";
 // import NavProvider from "./context/NavContext";
 import { Toaster } from "react-hot-toast";
+import ToggleProvider from "./context/ToggleContext";
 const App = () => {
   return (
-    <>
+    <ToggleProvider>
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
@@ -38,7 +39,7 @@ const App = () => {
           },
         }}
       />
-    </>
+    </ToggleProvider>
   );
 };
 
