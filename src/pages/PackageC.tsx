@@ -29,7 +29,7 @@ const Packages = () => {
       document.title = "GenesisOrb | Home";
     };
   }, []);
-
+  // Make cards responsive and lazly load the video in the background and use the logo as a spinner
   function clearFn() {
     setMail("");
     setFname("");
