@@ -39,7 +39,7 @@ export function PackageCard({
       href={href}
     >
       <div
-        className={`flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 ${cardDimension}`}
+        className={`flex basis-full flex-col p-4 tracking-tight text-slate-800/50 sm:basis-1/2 ${cardDimension}`}
       >
         <h3
           className={`max-w-xs !pb-2 !m-0 font-bold  text-base  bg-gradient-to-b bg-clip-text bg-opacity-50 ${cardTitleColorGradientFrom} ${cardTitleColorGradientTo} ${cardTitleClassName}`}

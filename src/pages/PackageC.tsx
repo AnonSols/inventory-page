@@ -6,7 +6,7 @@ import Back from "../ui/Back";
 // import { DeckButton } from "../ui/DeckButton";
 import Modal from "../ui/Modal";
 import {
-  HeroHighlight,
+  // HeroHighlight,
   Highlight,
 } from "../ui/heroHightlighComponent/Highlight";
 import Card from "../ui/Card";
@@ -18,9 +18,11 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { Button } from "../ui/Button";
-const Packages = () => {
+import TempNav from "../ui/PackageNav";
+ const Packages = () => {
   const [fName, setFname] = useState("");
   const [mail, setMail] = useState("");
+  // const { scrollYProgress } = useScroll();
   const navigate = useNavigate();
   useEffect(() => {
     document.title = "GenesisOrb | Packages";
@@ -49,9 +51,10 @@ const Packages = () => {
   }
   return (
     <Modal>
-      <HeroHighlight className="grid overscroll-x-none grid-rows-[auto_1fr] ">
+      <div className="grid overscroll-x-none grid-rows-[auto_1fr] ">
         <header>
-          <Nav className="hover:shadow-green-600/20 backdrop-blur-xs sm:mt-4 lg:mt-0 rounded-xl shadow-green-600/10 ">
+          <TempNav />
+          <Nav className="hover :shadow-green-600/20 backdrop-blur-xs sm:mt-4 lg:mt-0 rounded-xl shadow-green-600/10 ">
             {" "}
             <Back />
             <Modal.Open open="deck">
@@ -190,6 +193,7 @@ const Packages = () => {
                       titleColor="from-yellow-300  to-orange-600"
                     />
                   </li>
+
                   <li>
                     <Card
                       cardDimensions="w-[18rem] sm:w-[20rem] sm:h-[22rem]  h-[20rem]"
@@ -200,6 +204,7 @@ const Packages = () => {
                       titleColor="from-neutral-300 to-neutral-600"
                     />
                   </li>
+
                   <li>
                     <Card
                       cardDimensions="sm:w-[18rem] sm:h-[20rem]  w-[16rem] h-[19rem] "
@@ -210,12 +215,66 @@ const Packages = () => {
                       titleColor="from-cyan-300  to-green-600"
                     />
                   </li>
+                  
+                  <Modal.Open open="deck">
+                    <span className="w-full">
+                    
+                    <Button containerClassName=" rounded-full " className="lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
+                    Request for Deck
+                    </Button>
+                    </span>
+                  </Modal.Open>
+
+                  <Modal.Window
+                    windowsName="deck"
+                    onSubmit={handleRequest}
+                    btnState={(!fName && !mail) || !fName || !mail}
+                    reset={clearFn}
+                  >
+                    <p
+                      className=" text-xl tracking-widest
+              text-center"
+                    >
+                      We will Deliver Our Deck Right To Your Mail Box!
+                    </p>
+
+                    <ul className="mt-5 deck-ul flex flex-col">
+                      <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                        <label htmlFor="name" className="">
+                          {" "}
+                          full name:
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          value={fName}
+                          onChange={(e) => setFname(e.target.value)}
+                          placeholder="What's your name!"
+                        />
+                      </li>
+
+                      <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                        <label htmlFor="email" className=" ">
+                          {" "}
+                          email:
+                        </label>
+                        <input
+                          type="email"
+                          value={mail}
+                          onChange={(e) => setMail(e.target.value)}
+                          id="email"
+                          placeholder="What's your email!"
+                        />
+                      </li>
+                    </ul>
+                  </Modal.Window>
                 </ul>
               </article>
             </section>
           </article>
         </main>
-      </HeroHighlight>
+      </div>
+
       {/* <Background className="grid overscroll-x-none grid-rows-[auto_1fr] ">
         <header>
           <Nav className="hover:shadow-green-600/20  shadow-green-600/10 ">
