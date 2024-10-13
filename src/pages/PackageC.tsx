@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 // import Background from "../ui/Background";
-import Nav from "../ui/Nav";
+// import Nav from "../ui/Nav";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
-import Back from "../ui/Back";
+// import Back from "../ui/Back";
 // import { DeckButton } from "../ui/DeckButton";
 import Modal from "../ui/Modal";
 import {
@@ -19,7 +19,7 @@ import {
 } from "react-router-dom";
 import { Button } from "../ui/Button";
 import TempNav from "../ui/PackageNav";
- const Packages = () => {
+const Packages = () => {
   const [fName, setFname] = useState("");
   const [mail, setMail] = useState("");
   // const { scrollYProgress } = useScroll();
@@ -54,58 +54,60 @@ import TempNav from "../ui/PackageNav";
       <div className="grid overscroll-x-none grid-rows-[auto_1fr] ">
         <header>
           <TempNav />
-          <Nav className="hover :shadow-green-600/20 backdrop-blur-xs sm:mt-4 lg:mt-0 rounded-xl shadow-green-600/10 ">
+          <div className="p-6 text-base sm:px-14 md:px-20 sticky lg:px-26 flex items-center justify-end transition-all duration-[.3s] ">
             {" "}
-            <Back />
-            <Modal.Open open="deck">
-              <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
-                Request for Deck
-              </Button>
-            </Modal.Open>
-            <Modal.Window
-              windowsName="deck"
-              onSubmit={handleRequest}
-              btnState={(!fName && !mail) || !fName || !mail}
-              reset={clearFn}
-            >
-              <p
-                className=" text-xl tracking-widest
-              text-center"
+            {/* <Back /> */}
+             
+              <Modal.Open open="deck">
+                <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
+                  Request for Deck
+                </Button>
+              </Modal.Open>
+              <Modal.Window
+                windowsName="deck"
+                onSubmit={handleRequest}
+                btnState={(!fName && !mail) || !fName || !mail}
+                reset={clearFn}
               >
-                We will Deliver Our Deck Right To Your Mail Box!
-              </p>
+                <p
+                  className=" text-xl tracking-widest
+              text-center"
+                >
+                  We will Deliver Our Deck Right To Your Mail Box!
+                </p>
 
-              <ul className="mt-5 deck-ul flex flex-col">
-                <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
-                  <label htmlFor="name" className="">
-                    {" "}
-                    full name:
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    value={fName}
-                    onChange={(e) => setFname(e.target.value)}
-                    placeholder="What's your name!"
-                  />
-                </li>
+                <ul className="mt-5 deck-ul flex flex-col">
+                  <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                    <label htmlFor="name" className="">
+                      {" "}
+                      full name:
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      value={fName}
+                      onChange={(e) => setFname(e.target.value)}
+                      placeholder="What's your name!"
+                    />
+                  </li>
 
-                <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
-                  <label htmlFor="email" className=" ">
-                    {" "}
-                    email:
-                  </label>
-                  <input
-                    type="email"
-                    value={mail}
-                    onChange={(e) => setMail(e.target.value)}
-                    id="email"
-                    placeholder="What's your email!"
-                  />
-                </li>
-              </ul>
-            </Modal.Window>
-          </Nav>
+                  <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                    <label htmlFor="email" className=" ">
+                      {" "}
+                      email:
+                    </label>
+                    <input
+                      type="email"
+                      value={mail}
+                      onChange={(e) => setMail(e.target.value)}
+                      id="email"
+                      placeholder="What's your email!"
+                    />
+                  </li>
+                </ul>
+              </Modal.Window>
+           
+          </div>
         </header>
 
         <main className="overscroll-x-none">
@@ -215,59 +217,6 @@ import TempNav from "../ui/PackageNav";
                       titleColor="from-cyan-300  to-green-600"
                     />
                   </li>
-                  
-                  <Modal.Open open="deck">
-                    <span className="w-full">
-                    
-                    <Button containerClassName=" rounded-full " className="lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
-                    Request for Deck
-                    </Button>
-                    </span>
-                  </Modal.Open>
-
-                  <Modal.Window
-                    windowsName="deck"
-                    onSubmit={handleRequest}
-                    btnState={(!fName && !mail) || !fName || !mail}
-                    reset={clearFn}
-                  >
-                    <p
-                      className=" text-xl tracking-widest
-              text-center"
-                    >
-                      We will Deliver Our Deck Right To Your Mail Box!
-                    </p>
-
-                    <ul className="mt-5 deck-ul flex flex-col">
-                      <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
-                        <label htmlFor="name" className="">
-                          {" "}
-                          full name:
-                        </label>
-                        <input
-                          type="text"
-                          id="name"
-                          value={fName}
-                          onChange={(e) => setFname(e.target.value)}
-                          placeholder="What's your name!"
-                        />
-                      </li>
-
-                      <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
-                        <label htmlFor="email" className=" ">
-                          {" "}
-                          email:
-                        </label>
-                        <input
-                          type="email"
-                          value={mail}
-                          onChange={(e) => setMail(e.target.value)}
-                          id="email"
-                          placeholder="What's your email!"
-                        />
-                      </li>
-                    </ul>
-                  </Modal.Window>
                 </ul>
               </article>
             </section>
