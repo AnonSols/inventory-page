@@ -57,56 +57,54 @@ const Packages = () => {
           <div className="p-6 text-base sm:px-14 md:px-20 sticky lg:px-26 flex items-center justify-end transition-all duration-[.3s] ">
             {" "}
             {/* <Back /> */}
-             
-              <Modal.Open open="deck">
-                <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
-                  Request for Deck
-                </Button>
-              </Modal.Open>
-              <Modal.Window
-                windowsName="deck"
-                onSubmit={handleRequest}
-                btnState={(!fName && !mail) || !fName || !mail}
-                reset={clearFn}
-              >
-                <p
-                  className=" text-xl tracking-widest
+            <Modal.Open open="deck">
+              <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
+                Request for Deck
+              </Button>
+            </Modal.Open>
+            <Modal.Window
+              windowsName="deck"
+              onSubmit={handleRequest}
+              btnState={(!fName && !mail) || !fName || !mail}
+              reset={clearFn}
+            >
+              <p
+                className=" text-xl tracking-widest
               text-center"
-                >
-                  We will Deliver Our Deck Right To Your Mail Box!
-                </p>
+              >
+                We will Deliver Our Deck Right To Your Mail Box!
+              </p>
 
-                <ul className="mt-5 deck-ul flex flex-col">
-                  <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
-                    <label htmlFor="name" className="">
-                      {" "}
-                      full name:
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      value={fName}
-                      onChange={(e) => setFname(e.target.value)}
-                      placeholder="What's your name!"
-                    />
-                  </li>
+              <ul className="mt-5 deck-ul flex flex-col">
+                <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                  <label htmlFor="name" className="">
+                    {" "}
+                    full name:
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    value={fName}
+                    onChange={(e) => setFname(e.target.value)}
+                    placeholder="What's your name!"
+                  />
+                </li>
 
-                  <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
-                    <label htmlFor="email" className=" ">
-                      {" "}
-                      email:
-                    </label>
-                    <input
-                      type="email"
-                      value={mail}
-                      onChange={(e) => setMail(e.target.value)}
-                      id="email"
-                      placeholder="What's your email!"
-                    />
-                  </li>
-                </ul>
-              </Modal.Window>
-           
+                <li className="flex  flex-col md:flex-row md:items-center md:justify-center">
+                  <label htmlFor="email" className=" ">
+                    {" "}
+                    email:
+                  </label>
+                  <input
+                    type="email"
+                    value={mail}
+                    onChange={(e) => setMail(e.target.value)}
+                    id="email"
+                    placeholder="What's your email!"
+                  />
+                </li>
+              </ul>
+            </Modal.Window>
           </div>
         </header>
 
@@ -193,10 +191,12 @@ const Packages = () => {
                       price="500"
                       cardDimensions="w-[16rem] h-[19rem]  sm:w-[18rem] sm:h-[20rem]  "
                       titleColor="from-yellow-300  to-orange-600"
-                    />
+                    >
+                      <img src="/gold.jpg" alt="Gold package" />
+                    </Card>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Card
                       cardDimensions="w-[18rem] sm:w-[20rem] sm:h-[22rem]  h-[20rem]"
                       title="Classic  Package - 250 Million"
@@ -216,7 +216,7 @@ const Packages = () => {
                       price="50"
                       titleColor="from-cyan-300  to-green-600"
                     />
-                  </li>
+                  </li> */}
                 </ul>
               </article>
             </section>

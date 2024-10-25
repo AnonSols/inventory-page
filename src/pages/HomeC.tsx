@@ -74,17 +74,18 @@ function Home() {
             <source src="/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+
           <Spotlight
             className="-top-[.9rem] left-4 lg:left-60 lg:-top-24 md:left-20 md:-top-20"
             fill="green"
           />
-          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
+          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent text-white text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
             Welcome to the Future
           </h1>
           <div className="flex items-center justify-center flex-col leading-3 px-5">
-            <em className="text-xs lg:text-sm md:text-md  mt-4">
-              ~ World's most versatile Musical Instrument ~
-            </em>
+            <span className="text-xs lg:text-sm md:text-md  mt-4">
+              World's most versatile Musical Instrument
+            </span>
           </div>
         </article>
       </main>
