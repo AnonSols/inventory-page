@@ -11,13 +11,16 @@ function TempNav() {
         </span>
       </Link>
       <div className="flex items-center justify-around dark:text-neutral-200 gap-4">
-        <ul className="flex text-sm sm:text-base font-bold md:text-md items-center justify-center gap-2 sm:gap-4">
-          <span className=" text-sm sm:text-base font-bold md:text-md items-center justify-center gap-2 sm:gap-4 hidden md:flex"> 
-            <li>Instagram</li>
-            <li>Twitter</li>
+        <ul className="flex text-sm sm:text-base  md:text-md items-center justify-center gap-2 sm:gap-4">
+          <span className=" text-sm sm:text-base font-bold md:text-md items-center justify-center gap-2 sm:gap-4 hidden lg:flex"> 
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>STORE</li>
+            <li>RESERVATIONS</li>
+            <li>CONTACT US</li> 
           </span>
 
-        <span className="md:hidden">
+        <span className="lg:hidden">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

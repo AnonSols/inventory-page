@@ -153,7 +153,7 @@ const Packages = () => {
                       cardDimension=" w-[12rem] md:w-[14rem]  md:h-[16rem]  h-[14rem] "
                       position="Gold"
                       price="500"
-                      boxClass="bg-gradient-to-br from-yellow-500 via-orange-200 to-orange-500"
+                      src="/gold.jpg"
                     />
                   </li>
                   <li className=" row-span-2 items-center self-center">
@@ -164,7 +164,7 @@ const Packages = () => {
                       cardDimension="  w-[14rem] h-[16rem]  md:w-[16rem] md:h-[18rem]"
                       position="Classic"
                       price="250"
-                      boxClass="bg-gradient-to-br from-neutral-500 via-gray-200 to-neutral-500"
+                      src="/classic.jpg"
                     />
                   </li>
                   <li className="justify-content-end">
@@ -175,7 +175,7 @@ const Packages = () => {
                       cardDimension=" w-[12rem] md:w-[14rem]  md:h-[16rem]  h-[14rem] "
                       position="Premium"
                       price="50"
-                      boxClass="bg-gradient-to-br from-green-500 via-cyan-200 to-green-500"
+                      src="/premium.jpg"
                     />
                   </li>
                 </ul>
@@ -187,21 +187,19 @@ const Packages = () => {
                     <Card
                       title="Gold  Package - 500 Million"
                       position="Gold"
-                      color="from-yellow-500 via-orange-200 to-orange-500"
-                      price="500"
+                       price="500"
                       cardDimensions="w-[16rem] h-[19rem]  sm:w-[18rem] sm:h-[20rem]  "
+                      src="/gold.jpg"
                       titleColor="from-yellow-300  to-orange-600"
-                    >
-                      <img src="/gold.jpg" alt="Gold package" />
-                    </Card>
+                    />
                   </li>
 
-                  {/* <li>
+                  <li>
                     <Card
                       cardDimensions="w-[18rem] sm:w-[20rem] sm:h-[22rem]  h-[20rem]"
                       title="Classic  Package - 250 Million"
                       position="Classic"
-                      color=" from-neutral-500 via-gray-200 to-neutral-500"
+                      src="/classic.jpg"
                       price="250"
                       titleColor="from-neutral-300 to-neutral-600"
                     />
@@ -209,14 +207,14 @@ const Packages = () => {
 
                   <li>
                     <Card
-                      cardDimensions="sm:w-[18rem] sm:h-[20rem]  w-[16rem] h-[19rem] "
+                      cardDimensions="w-[16rem] h-[19rem]  sm:w-[18rem] sm:h-[20rem] "
                       title="Premium  Package - 50 Million"
                       position="Premium"
-                      color="from-green-500 via-cyan-200 to-green-500"
+                      src="/premium.jpg"
                       price="50"
-                      titleColor="from-cyan-300  to-green-600"
+                      titleColor="from-cyan-300  to-green-[600]"
                     />
-                  </li> */}
+                  </li>
                 </ul>
               </article>
             </section>
@@ -325,7 +323,7 @@ const Packages = () => {
                       cardDimension=" w-[12rem] md:w-[14rem]  md:h-[16rem]  h-[14rem] "
                       position="Gold"
                       price="500"
-                      boxClass="bg-gradient-to-br from-yellow-500 via-orange-200 to-orange-500"
+                      src="bg-gradient-to-br from-yellow-500 via-orange-200 to-orange-500"
                     />
                   </li>
                   <li className=" row-span-2 items-center self-center">
