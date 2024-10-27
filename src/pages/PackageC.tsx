@@ -11,19 +11,15 @@ import {
 } from "../ui/heroHightlighComponent/Highlight";
 import Card from "../ui/Card";
 import { PackageCard } from "../ui/PackageCard";
-import { toast } from "react-hot-toast";
 
 import {
-  // Link,
-  useNavigate,
+  Link,
+  // Link, 
 } from "react-router-dom";
 import { Button } from "../ui/Button";
 import TempNav from "../ui/PackageNav";
 const Packages = () => {
-  const [fName, setFname] = useState("");
-  const [mail, setMail] = useState("");
-  // const { scrollYProgress } = useScroll();
-  const navigate = useNavigate();
+  
   useEffect(() => {
     document.title = "GenesisOrb | Packages";
 
@@ -32,23 +28,7 @@ const Packages = () => {
     };
   }, []);
   // Make cards responsive and lazly load the video in the background and use the logo as a spinner
-  function clearFn() {
-    setMail("");
-    setFname("");
-  }
-  function handleRequest() {
-    if (!mail && !fName) return;
-
-    const data = { fName, mail };
-
-    localStorage.setItem(fName, JSON.stringify(data));
-
-    clearFn();
-
-    toast.success("We'll keep you up-to-date🥳🥳!");
-
-    navigate("/success");
-  }
+  
   return (
     <Modal>
       <div className="grid overscroll-x-none grid-rows-[auto_1fr] ">
@@ -56,8 +36,13 @@ const Packages = () => {
           <TempNav />
           <div className="p-6 text-base sm:px-14 md:px-20 sticky lg:px-26 flex items-center justify-end transition-all duration-[.3s] ">
             {" "}
+            <Link to="/register">
+              <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
+                Request for Deck
+              </Button>
+            </Link>
             {/* <Back /> */}
-            <Modal.Open open="deck">
+            {/* <Modal.Open open="deck">
               <Button className=" lg:font-bold text-[.8rem] shadow-lg  sm:text-base px-3">
                 Request for Deck
               </Button>
@@ -104,7 +89,7 @@ const Packages = () => {
                   />
                 </li>
               </ul>
-            </Modal.Window>
+            </Modal.Window> */}
           </div>
         </header>
 
@@ -187,7 +172,7 @@ const Packages = () => {
                     <Card
                       title="Gold  Package - 500 Million"
                       position="Gold"
-                       price="500"
+                      price="500"
                       cardDimensions="w-[16rem] h-[19rem]  sm:w-[18rem] sm:h-[20rem]  "
                       src="/gold.jpg"
                       titleColor="from-yellow-300  to-orange-600"

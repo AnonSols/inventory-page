@@ -21,9 +21,9 @@ function Home() {
            text-xs md:text-sm lg:text-md"
           >
             <p>
-             Invest in the future of local musical instruments! Join us as we build
-        an ecosystem primed for growth, aiming for &#8358;1 billion in value by
-        2038. Grow with us!
+              Invest in the future of local musical instruments! Join us as we
+              build an ecosystem primed for growth, aiming for &#8358;1 billion
+              in value by 2038. Grow with us!
             </p>
             <Button
               onClick={() => navigate("/package")}
@@ -63,16 +63,18 @@ function Home() {
 
       <main>
         <article
-          className="  my-auto relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
+          className="    relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
 
           "
         >
-            <Spotlight
+          <Spotlight
             className="-top-[.9rem] left-4 lg:left-60 lg:-top-24 md:left-20 md:-top-20"
             fill="green"
           />
-          <div className=" z-[-3]  absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center  
-"/>
+          <div
+            className=" z-[-3]  absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center  
+"
+          />
           <video
             autoPlay
             loop
@@ -83,7 +85,6 @@ function Home() {
             Your browser does not support the video tag.
           </video>
 
-        
           <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent text-white text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
             Welcome to the Future
           </h1>
@@ -97,5 +98,4 @@ function Home() {
     </Background>
   );
 }
-
 export default Home;
