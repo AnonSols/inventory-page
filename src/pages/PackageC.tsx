@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 // import Background from "../ui/Background";
 // import Nav from "../ui/Nav";
 import { Spotlight } from "../ui/sportlightComponent/Spotlight";
