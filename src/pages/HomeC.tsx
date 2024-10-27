@@ -17,12 +17,13 @@ function Home() {
         <Banner className="flex justify-around items-center">
           <div
             className="font-bold flex-col md:space-x-2 items-center justify-center md:items-center md:flex-row grow flex text-black   mx-auto md:text-md 
-           leading-4
+           leading-2 tracking-wide
            text-xs md:text-sm lg:text-md"
           >
             <p>
-              Invest, let's build the future together. We are building an
-              eco-system that would worth over 1 Billion by 2039
+              Invest in the future of local musical instruments! Join us as we
+              build an ecosystem primed for growth, aiming for &#8358;1 billion
+              in value by 2038. Grow with us!
             </p>
             <Button
               onClick={() => navigate("/package")}
@@ -62,34 +63,39 @@ function Home() {
 
       <main>
         <article
-          className="  my-auto relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
+          className="    relative z-10 w-full pt-20 md:pt-0 flex  flex-col justify-center  h-full place-items-center
+
           "
         >
-          <video
-            autoPlay
-            loop
-            muted
-            className="absolute z-[-2] top-0 left-0 w-full h-full object-cover"
-          >
-            <source src="/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
           <Spotlight
             className="-top-[.9rem] left-4 lg:left-60 lg:-top-24 md:left-20 md:-top-20"
             fill="green"
           />
-          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
+          <div
+            className=" z-[-3]  absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center  
+"
+          />
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute z-[-4] top-0 left-0 w-full h-full object-cover"
+          >
+            <source src="/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent text-white text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl">
             Welcome to the Future
           </h1>
           <div className="flex items-center justify-center flex-col leading-3 px-5">
-            <em className="text-xs lg:text-sm md:text-md  mt-4">
-              ~ World's most versatile Musical Instrument ~
-            </em>
+            <span className="text-sm text-white lg:text-lg md:text-md  mt-4">
+              World's most versatile Musical Instrument
+            </span>
           </div>
         </article>
       </main>
     </Background>
   );
 }
-
 export default Home;

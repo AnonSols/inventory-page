@@ -2,9 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/HomeC";
 import Success from "./pages/Success";
 import PageNotFound from "./pages/PageNotFound";
-import Packages from "./pages/PackageC";
-// import { AppLayout } from "./ui/AppLayout";
-// import NavProvider from "./context/NavContext";
+import Register from "./pages/RegisterPage";
+import Packages from "./pages/PackageC"; 
 import { Toaster } from "react-hot-toast";
 import ToggleProvider from "./context/ToggleContext";
 const App = () => {
@@ -15,6 +14,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="package" element={<Packages />} />
           <Route path="success" element={<Success />} />
+          <Route path="register" element={<Register />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

@@ -4,6 +4,7 @@
 
 @layer components {
   body {
+    font-family:'Gotu';
     @apply text-slate-900 transition-all duration-300;
   }
 

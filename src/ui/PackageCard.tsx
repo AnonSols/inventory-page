@@ -3,7 +3,7 @@ import { PinContainer } from "./AnimatedPin";
 type PackageCardProp = {
   href?: string;
   cardTitle?: string;
-  boxClass?: string;
+  src?: string;
   childrenDescription?: string;
   className?: string;
   containerClassName?: string;
@@ -24,7 +24,7 @@ export function PackageCard({
   cardTitleColorGradientTo,
   cardTitleColorGradientFrom,
   cardTitleClassName,
-  boxClass,
+  src,
   className,
   price,
   titleColor,
@@ -57,7 +57,12 @@ export function PackageCard({
             investor for {price} Million Naira
           </span>
         </div>
-        <div className={`flex flex-1 w-full rounded-lg mt-4 ${boxClass}`} />
+        <div
+        className={`   w-full rounded-lg mt-4 bg-gradient-to-br  h-full relative`}
+      >
+                             <img src={`${src}`} alt={cardTitle} className="w-full h-full rounded-md object-cover absolute mb-4"/>
+
+      </div>
       </div>
     </PinContainer>
   );
