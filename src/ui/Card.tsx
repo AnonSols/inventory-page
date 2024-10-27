@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 type CardTypes = {
   title: string;
   position: string;
@@ -12,13 +10,12 @@ type CardTypes = {
 
 const Card = ({
   title,
-  position, 
+  position,
   titleColor,
   price,
   src,
   cardDimensions,
 }: CardTypes) => {
-  
   return (
     <div
       className={`flex basis-full transition-all duration-300 flex-col p-6 tracking-tight text-slate-800/50 sm:basis-1/2 ${cardDimensions} border border-green-500/[0.2] !bg-slate-200  rounded-xl shadow-xl `}
@@ -42,8 +39,11 @@ const Card = ({
       <div
         className={`   w-full rounded-lg mt-4 bg-gradient-to-br  h-full relative`}
       >
-                             <img src={`${src}`} alt={title} className="w-full h-full rounded-md object-cover absolute mb-4"/>
-
+        <img
+          src={`${src}`}
+          alt={title}
+          className="w-full h-full rounded-md object-cover absolute mb-4"
+        />
       </div>
     </div>
   );
