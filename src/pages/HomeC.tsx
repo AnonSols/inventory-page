@@ -12,7 +12,7 @@ import TempNav from "../ui/PackageNav";
 function Home() {
   const navigate = useNavigate();
   return (
-    <Background className="grid overscroll-hidden grid-rows-[auto_1fr] ">
+    <Background className="grid overscroll-hidden grid-rows-[auto_1fr] relative">
       <header>
         <Banner className="flex justify-around items-center">
           <div
@@ -39,24 +39,6 @@ function Home() {
             <HiX />
           </button> */}
         </Banner>
-        {/* <Nav className="hover:shadow-green-600/20  backdrop-blur-lg shadow-green-600/10  bg-transparent ">
-          {" "}
-          <Link to="/">
-            <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
-              <img
-                className="h-12 w-auto"
-                src="/logo.png"
-                alt="GenesisOrb"
-              />
-            </span>
-          </Link>
-          <div className="flex items-center justify-around dark:text-neutral-200 gap-4">
-            <ul className="flex text-sm sm:text-base font-bold md:text-md items-center justify-center gap-2 sm:gap-4">
-              <li>Instagram</li>
-              <li>Twitter</li>
-            </ul>
-          </div>
-        </Nav> */}
 
         <TempNav />
       </header>

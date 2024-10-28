@@ -18,12 +18,11 @@ const PageNotFound = () => {
         {" "}
         <Link to="/">
           <span className="text-base sm:text-base font-bold md:text-md dark:text-neutral-200">
-           <img
-            className="h-12 w-auto"
-            src="/public/logo.png"
-            alt="genesis orb's logo"
-            
-          />
+            <img
+              className="h-12 w-auto"
+              src="/public/logo.png"
+              alt="genesis orb's logo"
+            />
           </span>
         </Link>
         <div className="flex items-center justify-around dark:text-neutral-200 gap-4">
@@ -43,9 +42,13 @@ const PageNotFound = () => {
           fill="green"
         />
         <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl p-6">
-          404<br />
-          Page Not Found 🤕!
+          404
+          <br />
         </h1>
+        <h1 className=" font-bold text-center bg-clip-text bg-opacity-50 text-transparent bg-gradient-to-b from-green-600 to-green-800 text-3xl lg:text-7xl md:text-6xl px-8 sm:text-4xl p-6">
+          Page Not Found!
+        </h1>
+       
       </article>
     </Background>
   );
