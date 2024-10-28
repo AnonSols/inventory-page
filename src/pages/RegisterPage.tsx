@@ -86,7 +86,7 @@ function RegisterPage() {
                   placeholder="What's your email!"
                 />
               </li>
-              <div className=" flex justify-end">
+              <div className=" flex justify-end mb-4">
                 <button
                   disabled={(!fName && !mail) || !fName || !mail}
                   className="w-full bg-[#39b54a] disabled:bg-green-[#39b54a]/80 shadow-lg p-3 text-lg rounded-lg outline-none focus:ring-2 focus:offset-2 flex items-center justify-center tracking-wide text-slate-200 mt-4 hover:bg-green-900 hover:shadow-xl md:w-[40%] md:self-end  disabled:cursor-not-allowed "

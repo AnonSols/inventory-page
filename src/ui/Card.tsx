@@ -42,6 +42,7 @@ const Card = ({
         <img
           src={`${src}`}
           alt={title}
+          loading="lazy"
           className="w-full h-full rounded-md object-cover absolute mb-4"
         />
       </div>

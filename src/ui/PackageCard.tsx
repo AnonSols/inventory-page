@@ -58,11 +58,15 @@ export function PackageCard({
           </span>
         </div>
         <div
-        className={`   w-full rounded-lg mt-4 bg-gradient-to-br  h-full relative`}
-      >
-                             <img src={`${src}`} alt={cardTitle} className="w-full h-full rounded-md object-cover absolute mb-4"/>
-
-      </div>
+          className={`   w-full rounded-lg mt-4 bg-gradient-to-br  h-full relative`}
+        >
+          <img
+            src={`${src}`}
+            loading="lazy"
+            alt={cardTitle}
+            className="w-full h-full rounded-md object-cover absolute mb-4"
+          />
+        </div>
       </div>
     </PinContainer>
   );
