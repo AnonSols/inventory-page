@@ -38,16 +38,17 @@ function RegisterPage() {
         <TempNav />
       </header>
       <main className="flex h-full place-items-center px-4 sm:px-8 flex-col">
-        <figure className="mb-8">
+        <figure className="mb-6">
           <img
             className="h-14 w-auto cursor-pointer"
             src="/logo.png"
             alt="Genesis orb"
+            loading="lazy"
             onClick={() => navigate("/")}
           />
         </figure>
 
-        <section className="grid grid-rows-[auto_auto]  gap-9">
+        <section className="grid grid-rows-[auto_auto]  gap-8">
           <p
             className="  tracking-widest
               text-center sm:px-7 lg:w-[800px]"
