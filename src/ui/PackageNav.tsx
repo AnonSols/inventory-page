@@ -66,7 +66,7 @@ function TempNav() {
         </div>
       </Nav>
       {isOpened && (
-        <section className="py-4 bg-white  ">
+        <section className="py-4 bg-white md:hidden ">
           <ul className="flex flex-col  gap-4 place-items-center">
             <li>
               <a href="https://genesisorb.com/index.html">HOME</a>
