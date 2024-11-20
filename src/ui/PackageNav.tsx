@@ -22,11 +22,25 @@ function TempNav() {
         <div className="flex items-center justify-around dark:text-neutral-200 gap-4">
           <ul className="flex text-sm sm:text-base  md:text-md items-center justify-center gap-2 sm:gap-4">
             <span className=" text-sm sm:text-base font-bold md:text-md items-center justify-center gap-2 sm:gap-4 hidden lg:flex">
-              <li>HOME</li>
-              <li>ABOUT US</li>
-              <li>STORE</li>
-              <li>RESERVATIONS</li>
-              <li>CONTACT US</li>
+              <li>
+                <a href="https://genesisorb.com/index.html">HOME</a>
+              </li>
+              <li>
+                <a href="https://genesisorb.com/index.html#aboutus">ABOUT US</a>
+              </li>
+              <li>
+                <a href="https://genesisorb.com/store.html">STORE</a>
+              </li>
+              <li>
+                <a href="https://genesisorb.com/php/Reservations.php">
+                  RESERVATIONS
+                </a>
+              </li>
+              <li>
+                <a href="https://genesisorb.com/php/Reservations.php">
+                  CONTACT US
+                </a>
+              </li>
             </span>
 
             <span
@@ -54,11 +68,25 @@ function TempNav() {
       {isOpened && (
         <section className="py-4 bg-white  ">
           <ul className="flex flex-col  gap-4 place-items-center">
-            <li> HOME</li>
-            <li> ABOUT US</li>
-            <li> STORE</li>
-            <li> RESERVATIONS</li>
-            <li> CONTACT US</li>
+            <li>
+              <a href="https://genesisorb.com/index.html">HOME</a>
+            </li>
+            <li>
+              <a href="https://genesisorb.com/index.html#aboutus">ABOUT US</a>
+            </li>
+            <li>
+              <a href="https://genesisorb.com/store.html">STORE</a>
+            </li>
+            <li>
+              <a href="https://genesisorb.com/php/Reservations.php">
+                RESERVATIONS
+              </a>
+            </li>
+            <li>
+              <a href="https://genesisorb.com/php/Reservations.php">
+                CONTACT US
+              </a>
+            </li>
           </ul>
         </section>
       )}
