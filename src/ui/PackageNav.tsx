@@ -37,9 +37,7 @@ function TempNav() {
                 </a>
               </li>
               <li>
-                <a href="https://genesisorb.com/php/Reservations.php">
-                  CONTACT US
-                </a>
+                <a href="https://genesisorb.com/Contactus.html">CONTACT US</a>
               </li>
             </span>
 
@@ -83,9 +81,7 @@ function TempNav() {
               </a>
             </li>
             <li>
-              <a href="https://genesisorb.com/php/Reservations.php">
-                CONTACT US
-              </a>
+              <a href="https://genesisorb.com/Contactus.html">CONTACT US</a>
             </li>
           </ul>
         </section>
