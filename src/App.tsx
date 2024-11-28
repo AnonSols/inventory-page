@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Home from "./pages/HomeC";
+import Home from "./pages/HomeC";
 import Success from "./pages/Success";
 import PageNotFound from "./pages/PageNotFound";
 import Register from "./pages/RegisterPage";
@@ -11,8 +11,8 @@ const App = () => {
     <ToggleProvider>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Packages />} />
-          {/* <Route path="package" element={<Packages />} /> */}
+          <Route index element={<Home />} />
+          <Route path="package" element={<Packages />} />
           <Route path="success" element={<Success />} />
           <Route path="register" element={<Register />} />
           <Route path="*" element={<PageNotFound />} />
